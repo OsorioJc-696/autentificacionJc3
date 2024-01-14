@@ -68,11 +68,11 @@ const UserList = ({ users, setUsers }) => {
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <div className="flex flex-wrap  p-2 justify-center">
       {users.map(user => (
-        <div key={user.id} className="bg-white p-4 rounded shadow">
+        <div key={user.id} className="bg-sky-900 p-4 m-2 rounded text-center text-black shadow-2xl">
           <div className=''>
-            <p className="text-black font-bold">ID: {user.id}</p>
+            <p className="text-black  font-bold">ID: {user.id}</p>
             <p className="text-black">Nombre: {user.username}</p>
             <p className="text-black">Email: {user.email}</p>
           </div>
@@ -81,13 +81,13 @@ const UserList = ({ users, setUsers }) => {
             {editingUserId === user.id ? (
               <div className="flex  flex-col rounded-2xl my-2 items-center">
                 <input
-                  className="border rounded my-1 px-2"
+                  className="border-2 border-solid border-gray-900 hover:bg-cyan-600 bg-cyan-400 rounded my-1 px-2"
                   type="text"
                   value={updatedUserData.username}
                   onChange={e => handleInputChange(e, 'username')}
                 />
                 <input
-                  className="border rounded my-1 px-2"
+                  className="border-2 border-solid border-gray-900 hover:bg-cyan-600 bg-cyan-400 rounded my-1 px-2"
                   type="text"
                   value={updatedUserData.email}
                   onChange={e => handleInputChange(e, 'email')}

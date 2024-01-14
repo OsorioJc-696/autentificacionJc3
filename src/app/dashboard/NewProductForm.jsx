@@ -88,7 +88,7 @@ const NewProductForm = ({setProducts}) => {
   return (
     <div className="my-5">
       {addingProduct ? (
-        <div className='mx-auto flex justify-center flex-col mx-20'>
+        <div className='flex justify-center flex-col mx-10'>
           <div className="bg-white grid  gap-4 rounded p-4">
             
             <div className="rounded shadow grid sm:grid-cols-1 md:grid-cols-3  gap-4 ">
@@ -97,14 +97,14 @@ const NewProductForm = ({setProducts}) => {
                 type="text"
                 value={newProductData.marca || ''}
                 onChange={(e) => handleInputChangeProduct(e, 'marca')}
-                className="border text-center hover:bg-cyan-900 bg-cyan-800 p-2 mb-2 rounded-2xl"
+                className="border-2 border-solid border-slate-950 text-center hover:bg-cyan-900 bg-cyan-800 p-2 mb-2 rounded-2xl"
                 placeholder="Marca"
                 />
             <input
                 type="text"
                 value={newProductData.modelo || ''}
                 onChange={(e) => handleInputChangeProduct(e, 'modelo')}
-                className="border bg-cyan-800 hover:bg-cyan-900 p-2 mb-2 rounded-2xl text-center"
+                className="border-2 border-solid border-slate-950  bg-cyan-800 hover:bg-cyan-900 p-2 mb-2 rounded-2xl text-center"
                 placeholder="Modelo"
                 />
             
@@ -116,28 +116,28 @@ const NewProductForm = ({setProducts}) => {
                 type="text"
                 value={newProductData.alto || ''}
                 onChange={(e) => handleInputChangeProduct(e, 'alto')}
-                className="border bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
+                className="border-2 border-solid border-slate-950 bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
                 placeholder="Alto"
                 />
                <input
                 type="text"
                 value={newProductData.ancho || ''}
                 onChange={(e) => handleInputChangeProduct(e, 'ancho')}
-                className="border bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
+                className="border-2 border-solid border-slate-950 bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
                 placeholder="Ancho"
                 />
                 <input
                 type="text"
                 value={newProductData.peso || ''}
                 onChange={(e) => handleInputChangeProduct(e, 'peso')}
-                className="border bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
+                className="border-2 border-solid border-slate-950 bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
                 placeholder="Peso"
                 />
             <input
                 type="text"
                 value={newProductData.profundidad || ''}
                 onChange={(e) => handleInputChangeProduct(e, 'profundidad')}
-                className="border bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
+                className="border-2 border-solid border-slate-950 bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
                 placeholder="Profundidad"
                 />
               </div>
@@ -147,14 +147,14 @@ const NewProductForm = ({setProducts}) => {
                 type="text"
                 value={newProductData.color || ''}
                 onChange={(e) => handleInputChangeProduct(e, 'color')}
-                className="border bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
+                className="border-2 border-solid border-slate-950 bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
                 placeholder="Color"
                 />
                 <input
                     type="text"
                     value={newProductData.eficienciaEnergetica}
                     onChange={(e) => handleInputChangeProduct(e, 'eficienciaEnergetica')}
-                    className="border bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
+                    className="border-2 border-solid border-slate-950 bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
                     placeholder="Eficiencia Energetica"
                   />
 
@@ -163,7 +163,7 @@ const NewProductForm = ({setProducts}) => {
                 type="text"
                 value={newProductData.garantia || ''}
                 onChange={(e) => handleInputChangeProduct(e, 'garantia')}
-                className="border bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
+                className="border-2 border-solid border-slate-950 bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
                 placeholder="Garantia"
                 />
                 
@@ -171,7 +171,7 @@ const NewProductForm = ({setProducts}) => {
                 type="text"
                 value={newProductData.voltaje || ''}
                 onChange={(e) => handleInputChangeProduct(e, 'voltaje')}
-                className="border bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
+                className="border-2 border-solid border-slate-950 bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
                 placeholder="Voltaje"
                 />
             </div>
@@ -181,7 +181,7 @@ const NewProductForm = ({setProducts}) => {
                 type="text"
                 value={newProductData.fotografia || ''}
                 onChange={(e) => handleInputChangeProduct(e, 'fotografia')}
-                className="border bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
+                className="border-2 border-solid border-slate-950 bg-cyan-800 p-2 mb-2 rounded-2xl text-center hover:bg-cyan-900"
                 placeholder="URL Imagen"
             />
             
