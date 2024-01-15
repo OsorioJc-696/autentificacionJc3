@@ -34,7 +34,7 @@ function HomePage() {
     setCurrentPage((prevPage) => (prevPage - 1 + totalPages) % totalPages);
   };
 
-  const DatosProductos = ({ producto, index }) => (
+  const DatosProductos = ({ producto}) => (
     <Link href={`/producto/${producto.id}`}>
     <div className="bg-black p-4 rounded shadow mb-4">
       <div className='flex justify-center'>

@@ -121,19 +121,21 @@ const ProductList = ({ products, setProducts }) => {
                 alt={`Imagen de ${product.fotografia}`}
                 className="max-h-48 rounded-xl object-contain mx-auto mb-4"
               />
-              <div className="grid grid-cols-2 font-bold al gap-0">
-                <p className="border-solid border-2 rounded-xl mr-2">{product.marca}</p>
-                <p className="border-solid border-2 rounded-xl ml-2"> {product.modelo}</p>
+              <div className="text-white grid grid-cols-2 font-bold mb-2 gap-0">
+                <p className="text-white  border-solid border-2 rounded-xl">{product.marca}</p>
+                <div className='flex justify-center '>
+                <p className=" text-white  border-solid border-2 rounded-xl px-2 pt-1 " style={{ fontSize: '10px' }}> {product.modelo}</p>
+                </div>
               </div>
-              <div className="grid grid-cols-4 font-bold gap-1">
-                <p className="border-solid border-2 rounded-xl">{product.alto}</p>
-                <p className="border-solid border-2 rounded-xl">{product.ancho}</p>
-                <p className="border-solid border-2 rounded-xl">{product.peso}</p>
-                <p className="border-solid border-2 rounded-xl">{product.profundidad}</p>
-                <p className="border-solid border-2 rounded-xl">{product.color}</p>
-                <p className="border-solid border-2 rounded-xl">{product.eficienciaEnergetica}</p>
-                <p className="border-solid border-2 rounded-xl">{product.garantia}</p>
-                <p className="border-solid border-2 rounded-xl">{product.voltaje}</p>
+              <div className="text-white grid grid-cols-4 font-bold gap-1">
+                <p className="text-white border-solid border-2 rounded-xl">{product.alto}</p>
+                <p className="text-white border-solid border-2 rounded-xl">{product.ancho}</p>
+                <p className="text-white border-solid border-2 rounded-xl">{product.peso}</p>
+                <p className="text-white border-solid border-2 rounded-xl">{product.profundidad}</p>
+                <p className="text-white border-solid border-2 rounded-xl">{product.color}</p>
+                <p className="text-white border-solid border-2 rounded-xl">{product.eficienciaEnergetica}</p>
+                <p className="text-white border-solid border-2 rounded-xl">{product.garantia}</p>
+                <p className="text-whiteborder-solid border-2 rounded-xl">{product.voltaje}</p>
                 
               </div>
 

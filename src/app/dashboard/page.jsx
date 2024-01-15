@@ -8,7 +8,7 @@ import ProductList from './ProductList';
 function DashboardPage() {
   const [users, setUsers] = useState([]);
   const [products, setProducts] = useState([]);
-  const [activeComponent, setActiveComponent] = useState('users');
+  const [activeComponent, setActiveComponent] = useState('products');
 
   useEffect(() => {
     // Carga de usuarios
